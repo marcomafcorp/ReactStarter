@@ -13,7 +13,7 @@ class SearchBar extends Component {
       <input
       value = {this.state.term}
       onChange={event => this.onInputChange(event.target.value)} />
-      <div>Search More Videos</div>
+      <span className="font-page">   Blazing Fast Search</span>
     </div>
     );
   }

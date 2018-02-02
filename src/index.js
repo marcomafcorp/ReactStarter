@@ -6,7 +6,6 @@ import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 const API_KEY = 'AIzaSyCRZTqtcSlbTnuLvEOcaZ2XthsAgL2msaQ';
-
 YTSearch({key: API_KEY, term: 'React JS'}, function(data) {
   console.log(data);
 });
@@ -33,7 +32,7 @@ class App extends Component {
   }
 
 render() {
-  const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
+  const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 200);
 
     return (
       <div>
@@ -42,7 +41,15 @@ render() {
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
           videos={this.state.videos} />
+          <div></div>
+          <div>
+          
+
+          </div>
+          <span><img className="img-size" src="../img/IMG_1311.JPG" alt="Image"/></span>
+
       </div>
+
     );
   }
 }

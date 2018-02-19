@@ -41,12 +41,12 @@ render() {
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
           videos={this.state.videos} />
-          <div></div>
-          <div>
-          
 
+          <div></div>
+
+          <div class="row">
+            <div><img className="img-size" src="../img/IMG_1311.JPG" alt="Image"/></div>
           </div>
-          <span><img className="img-size" src="../img/IMG_1311.JPG" alt="Image"/></span>
 
       </div>
 
